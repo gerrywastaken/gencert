@@ -1,0 +1,21 @@
+name: gencert
+version: 0.1.0
+
+authors:
+  - Gerry <git@caulfield.me>
+
+targets:
+  gencert:
+    main: src/main.cr
+
+crystal: 0.31.1
+
+license: MIT
+
+dependencies:
+  # This just makes creating a CLI tool easy by extracting arguments.
+  admiral:
+    # Using my fork until I hear back from the author on this issue:
+    # https://github.com/jwaldrip/admiral.cr/issues/23
+    github: gerrywastaken/admiral.cr
+    # github: jwaldrip/admiral.cr
