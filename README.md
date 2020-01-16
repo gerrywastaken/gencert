@@ -52,7 +52,7 @@ gencert worker-1 /CN=system:node:worker-1/O=system:nodes -c ../openssl-worker-1.
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/boo/fork>)
+1. Fork it (<https://github.com/gerrywastaken/gencert/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
