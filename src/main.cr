@@ -59,17 +59,16 @@ class Main < Admiral::Command
   end
 
   def help
-    description = "Generate simple certs simply"
+    description = "Generate simple certs simply\n"
     long_description = Data.help_text
 
     puts [
       help_usage,
-      "\n",
       description,
-      long_description,
-      help_flags,
       help_arguments,
-      help_sub_commands
+      help_flags,
+      help_sub_commands,
+      long_description,
     ].reject(&.strip.empty?).join("\n")
   end
 
