@@ -2,10 +2,22 @@
 
 Generate simple certs simply
 
-## Installation
+## Install via download (currently Linux only)
 
-1. [Download gencert](https://github.com/gerrywastaken/gencert/releases/tag/v0.1.0) (currently only Linux) and run it.
-2. There is no step 2
+1. [Download gencert](https://github.com/gerrywastaken/gencert/releases/latest)
+2. chmod +x gencert
+3. ./gencert --help
+
+## Run via Docker
+
+1. `docker run -v $PATH:/app gerrywastaken/gencert foo /CN=foo --dry-run --ip 1.1.1.1`
+
+## Run via Crystal
+
+1. Install Crystal https://crystal-lang.org/install/
+2. Download this code
+3. Build `shards build gencert`
+4. Run `bin/gencert --help`
 
 ## Usage
 
