@@ -64,6 +64,7 @@ class Main < Admiral::Command
 
     puts [
       help_usage,
+      "\n",
       description,
       long_description,
       help_flags,
