@@ -10,7 +10,7 @@ Generate simple certs simply
 
 ## Run via Docker
 
-1. `docker run -v $PATH:/app gerrywastaken/gencert foo /CN=foo --dry-run --ip 1.1.1.1`
+1. `docker run -v $PWD:/app gerrywastaken/gencert foo /CN=foo --dry-run --ip 1.1.1.1`
 
 ## Run via Crystal
 
