@@ -1,2 +1,6 @@
 #!/bin/bash
-docker run --rm -it -v $PWD:/app -w /app durosoft/crystal-alpine:latest crystal build src/main.cr -o build/gencert --release --static --no-debug
+GID=$(id -g $USER)
+docker build . --target builder -t compile_gencert && \
+mkdir -p $PWD/builds && \
+docker run --user $UID:$GID --rm -v $PWD/builds:/app compile_gencert cp /bin/gencert /app && \
+sudo chown $USER:$GID $PWD/builds/gencert
