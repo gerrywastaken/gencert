@@ -10,7 +10,9 @@ Generate simple certs simply
 
 ## Run via Docker
 
-1. `docker run -v $PWD:/app gerrywastaken/gencert foo /CN=foo --dry-run --ip 1.1.1.1`
+1. Create a Bash alias `alias gencert="docker run -v $PWD/kubecerts:/app gerrywastaken/gencert`
+2. `gencert ca /CN=KUBERNETES-CA`
+3. `gencert admin /CN=admin/O=system:masters`
 
 ## Run via Crystal
 
