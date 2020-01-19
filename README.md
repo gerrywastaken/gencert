@@ -10,7 +10,7 @@ Generate simple certs simply
 
 ## Run via Docker
 
-1. Create a Bash alias `alias gencert="docker run -v $PWD/kubecerts:/app gerrywastaken/gencert`
+1. Create a Bash alias `alias gencert="docker run -v $PWD/kubecerts:/app gerrywastaken/gencert"`
 2. `gencert ca /CN=KUBERNETES-CA`
 3. `gencert admin /CN=admin/O=system:masters`
 
