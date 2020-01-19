@@ -4,9 +4,9 @@ Generate simple certs simply
 
 ## Install via download (currently Linux only)
 
-1. [Download gencert](https://github.com/gerrywastaken/gencert/releases/latest)
-2. chmod +x gencert
-3. ./gencert --help
+1. [download](https://github.com/gerrywastaken/gencert/releases/latest)
+2. extract: `tar -xf gencert-linux.tar.gz; cd gencert`
+3. run: `./gencert ca /CN=KUBERNETES-CA --dry-run`
 
 ## Run via Docker
 
